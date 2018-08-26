@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Signup";
+}
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+<h2>Sign up</h2>
+
+<style>
+    .background {
+        /*background: url("../../Images/sprite.png");*/
+        background-color: #2183c2;
+    }
+
+    h4, h6 {
+        font-family: Ubuntu;
+        padding: 2px;
+    }
+
+    h4{
+        font-size:30px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    #form-submit{
+        padding: 15px;
+    }
+    #heading{
+        padding: 10px;
+    }
+    #paragraph{
+        padding: 5px;
+    }
+
+    @@media only screen and (max-width: 576px) {
+        #paragraph, #form-submit, #heading {
+            padding: 10px;
+        }
+
+        h4{
+            font-size:22px;
+        }
+        h6{
+            font-size:14px;
+        }
+    }
+
+}
+</style>
+
+<div class="container">
+    <div class="row">
+            <img src="~/Images/sprite.png" style="object-fit:contain; width:100%; height:100%;"/>
+    </div>
+    <div class="row" style="background-color:#2183c2;">
+        <div class="col-12 col-md-4 col-lg-12" id="heading">
+            <h4 style="font-weight:bold; color: #ffffff">
+                Sign Up for E-News
+            </h4>
+        </div>
+        <div class="col-12 col-md-4 col-lg-6" id="paragraph">
+            <h6 style="font-weight:lighter;  color: #ffffff">
+                Leave your email and we'll send you regular updates on programs, events and news at BrainLink
+            </h6>
+        </div>
+        <div class="col-12 col-md-4 col-lg-6" id="form-submit">
+            <div class="input-group">
+                <input type="search" class="form-control" style="max-width:none">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button" style="color:#0c5382;">
+                        <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
